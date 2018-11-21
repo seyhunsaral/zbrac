@@ -1,0 +1,5 @@
+openpyxl>=2.5.8
+PyQt5>=5.11.3
+PyQt5-sip>=4.19.13
+urllib3>=1.24.1
+XlsxWriter>=1.1.1

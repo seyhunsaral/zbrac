@@ -1,0 +1,25 @@
+venv-setup.txt
+
+.idea/
+
+# cx_freeze output executables
+build/
+
+# Setuptools distribution folder
+dist/
+
+src/zbrac/zbrac/__pycache__
+src/zbrac/zbrac/mainwindow.py
+src/zbrac/zbrac/resources_rc.py
+
+examples/
+
+# Compiled python modules
+*.pyc
+
+# Setuptools distribution folder
+dist/
+
+# Python egg metadata, regenarated from source files by setuptools
+src/zbrac/zbrac/*.egg-info
+
