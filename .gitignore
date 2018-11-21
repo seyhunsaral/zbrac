@@ -23,3 +23,4 @@ dist/
 # Python egg metadata, regenarated from source files by setuptools
 src/zbrac/zbrac/*.egg-info
 
+src/zbrac/zbrac.egg-info/
