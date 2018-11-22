@@ -1,7 +1,7 @@
 # zBrac : A text paste utility for zTree
 ![weblogo](/visuals/img/png/weblogo.png)
 
-Created by Ali Seyhun Saral and Anna Schröter
+Created by Ali Seyhun Saral and Anna Schröter  
 Licensed under GNU General Public License v3.0 
 
 ## About the project
