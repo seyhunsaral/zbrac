@@ -2,3 +2,5 @@ language: python
   - "3.6"
 install:
   - pip install -r requirements.txt
+script:
+  - python ./src/zbrac/run.py 
