@@ -1,7 +1,3 @@
----
-typora-root-url: ./
----
-
 # zBrac : A text paste utility for zTree
 ![weblogo](/visuals/img/png/weblogo.png)
 
