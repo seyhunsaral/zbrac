@@ -8,15 +8,15 @@ virtualenv:
 addons:
   apt:
     packages:
-      - "python3.6"
-      - "python3.6-pip"
+      - "python3"
+      - "python3-pip"
 install:
- - python3.6 --version
+ - python3 --version
  - sudo apt-get update
- - sudo pip3.6 install --upgrade pip -i https://pypi.python.org/simple
- - pip3.6 install -r requirements.txt
+ - sudo pip3 install --upgrade pip -i https://pypi.python.org/simple
+ - pip3 install -r requirements.txt
 script:
-  - python3.6 ./src/zbrac/run.py 
+  - python3 ./src/zbrac/run.py 
 
 
 
