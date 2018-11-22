@@ -1,4 +1,10 @@
+---
+typora-root-url: ./
+---
+
 # zBrac : A text paste utility for zTree
+![weblogo](/visuals/img/png/weblogo.png)
+
 ## About the project
 
 `zBrac`<sup>1</sup>is a tool designed for easy implementation of text and language files to `zTree` (Fischbacher,2007) treatment files.  With the software you can export "language files" in excel format from your zTree treatment files and import it back after the translation.
