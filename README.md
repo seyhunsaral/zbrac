@@ -23,7 +23,7 @@ Then `zbrac` command opens the software
 
 ### Installation with Windows Installer
 You can download the installer here: 
-[https://github.com/seyhunsaral/zbrac/raw/master/installer/Output/zBrac-1-0-3-win32-setup.exe zBrac-1-0-3-win32-setup.exe]
+[zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/raw/master/installer/Output/zBrac-1-0-3-win32-setup.exe)
 
 
 [1] :  pronounced ˈzibrək, like zebra (that's where the logo comes from)
