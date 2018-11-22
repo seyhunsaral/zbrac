@@ -16,7 +16,7 @@
 
 ## Installation
 ### Installation with pip (Windows, GNU/Linux, MacOS)
-If you have Python(>=3.6) and pip on your computer you can install zbrac by writing
+If you have Python(>=3.6) and pip on your computer you can install with
 `pip install zbrac` 
 
 Then `zbrac` command opens the software
