@@ -28,7 +28,7 @@ Then `zbrac` command opens the software
 
 ### Installation with Windows Installer
 You can download the installer here: 
-[v1.0.3 Windows Installer: zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/releases/download/v1.0.3/zBrac-1-0-3-win32-setup.exe)
+[zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/releases/download/v1.0.3/zBrac-1-0-3-win32-setup.exe)
 
 ## Contributing
 Guidelines for contributing will be available soon.
