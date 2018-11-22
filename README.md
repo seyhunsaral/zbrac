@@ -1,5 +1,7 @@
 # zBrac : A text paste utility for zTree
 ![weblogo](/visuals/img/png/weblogo.png)
+Created by Ali Seyhun Saral and Anna Schröter
+Licensed under GNU General Public License v3.0 
 
 ## About the project
 
@@ -27,5 +29,7 @@ Then `zbrac` command opens the software
 You can download the installer here: 
 [zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/raw/master/installer/Output/zBrac-1-0-3-win32-setup.exe)
 
+## Contributing
+Guidelines for contributing will be available soon.
 
 [1] :  pronounced ˈzibrək, like zebra (that's where the logo comes from)
