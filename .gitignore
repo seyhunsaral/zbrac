@@ -24,3 +24,6 @@ dist/
 src/zbrac/zbrac/*.egg-info
 
 src/zbrac/zbrac.egg-info/
+
+# Package
+installer/Output
