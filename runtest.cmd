@@ -1,1 +1,1 @@
-./src/zbrac/run.py 
+python ./src/zbrac/run.py 
