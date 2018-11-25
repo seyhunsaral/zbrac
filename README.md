@@ -33,4 +33,4 @@ You can download the installer here:
 ## Contributing
 Guidelines for contributing will be available soon.
 
-[1] :  pronounced ˈzibrək, like zebra (that's where the logo comes from)
+[1] :  The name zBrac is a portmanteau of "zTree Brackets". It is pronounced ˈzibrək, like zebra (that's where the logo comes from)
