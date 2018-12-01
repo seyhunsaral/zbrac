@@ -15,10 +15,10 @@ Licensed under GNU General Public License v3.0
 ## About the project
 
 
-`zBrac`<sup>1</sup>is a tool designed for easy implementation of text 
-and language files to `zTree` (Fischbacher,2007) treatment files.  With 
-the software you can export "language files" in excel format from your 
-zTree treatment files and import it back after the translation.
+`zBrac`<sup>1</sup>is a tool designed for easily modify the text of treatment files of `z-Tree`(Fischbacher,2007) treatment files.  With this software you can export specified text into "language files" import it back after the the text edit/translation.
+
+`zBrac` is particularly useful when the tratment file contains same piece of text several times. This is very common as it is often needed to copy-paste stage tree elements in z-Tree.
+
 
 
 ### Design
