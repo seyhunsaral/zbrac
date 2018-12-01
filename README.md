@@ -34,10 +34,12 @@ to write all the text in double brackets. You can easily strip them out
 by using the *Strip Brackets* function of zBrac.
 
 ### Language file (xlsx)
-A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:
-| | |
-|---|---|---|
-| [[welcome message]]        | Welcome to our experiment |
+A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:  
+
+| (column1)  | (column2) |
+| ------------- | ------------- |
+| [[welcome message]]| Welcome to our experiment |
+
 
 
 ### Treatment file (txt)
