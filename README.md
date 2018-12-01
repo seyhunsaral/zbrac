@@ -31,7 +31,7 @@ If your treatment file is already written, the
 sentences or text blocks to be translated should be enclosed by `[[` 
 and `]]`. If you will write a zTree treatment from scratch, it is better 
 to write all the text in double brackets. You can easily strip them out 
-by using "Strip Brackets" function of zBrac.
+by using the *Strip Brackets* function of zBrac.
 
 ### Language file (xlsx)
 A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:
@@ -58,7 +58,7 @@ You can download the installer here:
 
 If you have Python(>=3.6) and pip on your computer you can install with
 
-`pip install zbrac`
+`pip3 install zbrac` or `pip install zbrac`
 
 
 Then `zbrac` command opens the software
