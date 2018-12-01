@@ -33,7 +33,7 @@ and `]]`. If you will write a zTree treatment from scratch, it is better
 to write all the text in double brackets. You can easily strip them out 
 by using the *Strip Brackets* function of zBrac.
 
-### Language file (xlsx)
+### Language files (xlsx)
 A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:  
 
 | (column1)  | (column2) |
@@ -42,65 +42,30 @@ A language file is an excel file which in each row contains a key as the first c
 
 
 
-### Treatment file (txt)
+### Treatment files (txt)
 Treatment files (TXT): Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree.
 
+## Example: Translating 
 
-## Installation
+Here we demonstrate how to use zBrac by using a Holt & Laury Measure of Risk Aversion (Holt and Laury, 2002) from English to German.[2]
 
-### Installation with Windows Installer
-
-You can download the installer here:
-
-[zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/releases/download/v1.0.3/zBrac-1-0-3-win32-setup.exe)
-
-
-
-### Installation with pip (Windows, GNU/Linux, MacOS)
-
-If you have Python(>=3.6) and pip on your computer you can install with
-
-`pip3 install zbrac` or `pip install zbrac`
-
-
-Then `zbrac` command opens the software
-
-
-## Example
-
-Here we will show you how we translated a simple Holt & Laury experiment 
-from english to german.
-
-This is the english version we started with.
+This is the english version we started with:
 
 ![zT-H&L-en](/visuals/img/png/zT-H&L-en.png)
 
-First we found all text elements in the zTree file and wrapped them in 
-double brackets.
+First enclosed all the text we want to modify with double brackets. Now the file looks like this: 
 
 ![zT-H&L-zBrac](/visuals/img/png/zT-H&L-zBrac.png)
 
-Then we exported this bracketed version to a text file by clicking 
+Then we exported the file to a text file by clicking: 
 `File` then `Export` and `Treatment`.
 
-![zT-save-export](/visuals/img/png/zT-save-export.png)
-
-After that we opened zBrac and choose the `Create Language File` function.
+After that we opened zBrac and choose the `Create Language File` function. This creates a template file that contains all the keys in the file.
 
 ![zB-CL](/visuals/img/png/zB-CL.png)
 
-We clicked `browse` to browse for our exported treatment file.
-
-![zB-CL-browse](/visuals/img/png/zB-CL-browse.png)
-
-Now the filepath of our treatment file is written in the `Load treatment 
-File` field.
-
-![zB-CL-selected](/visuals/img/png/zB-CL-selected.png)
-
 By clicking `Save language file as...` we created a language file to save.
 
-![zB-save-language](/visuals/img/png/zB-save-language.png)
 
 This language file now looks like this:
 
@@ -143,6 +108,27 @@ This is what our result looks like.
 ![zT-H&L-ge](/visuals/img/png/zT-H&L-ge.png)
 
 
+## Installation
+
+### Installation with Windows Installer
+
+You can download the installer here:
+
+[zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/releases/download/v1.0.3/zBrac-1-0-3-win32-setup.exe)
+
+
+
+### Installation with pip (Windows, GNU/Linux, MacOS)
+
+If you have Python(>=3.6) and pip on your computer you can install with
+
+`pip3 install zbrac` or `pip install zbrac`
+
+
+Then `zbrac` command opens the software
+
+
+
 
 ## Contributing
 
@@ -151,3 +137,5 @@ Guidelines for contributing will be available soon.
 
 [1] :  The name zBrac is a portmanteau of the words zTree and brackets. 
 It is pronounced ˈzibrək, like zebra (that's where the logo comes from)
+
+[2] : We used this sample file sentto the z-Tree mail group. Credits : Andreas Drichoutis
