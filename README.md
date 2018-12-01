@@ -15,38 +15,33 @@ Licensed under GNU General Public License v3.0
 ## About the project
 
 
-`zBrac`<sup>1</sup>is a tool designed for easily modify the text of treatment files of `z-Tree`(Fischbacher,2007) treatment files.  With this software you can export specified text into "language files" import it back after the the text edit/translation.
+zBrac<sup>1</sup>is a tool designed for easily modify the text of treatment files of z-Tree(Fischbacher,2007) treatment files.  With this software you can export specified text into "language files" import it back after the the text edit/translation.
 
-`zBrac` is particularly useful when the tratment file contains same piece of text several times. This is very common as it is often needed to copy-paste stage tree elements in z-Tree.
+zBrac is particularly useful when the tratment file contains same piece of text several times. This is very common as it is often needed to copy-paste stage tree elements in z-Tree.
 
+## Design
+### Keys
+zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text that are double bracketed are called "**keys**".
 
+Each key acts as a placeholder and later potentially to be replaced by another text.
 
-### Design
+To give an example, if you'd like to add a welcome message on your zTree file but you are not sure about the exact message at that point, you can just put `[[welcome message]]` on the appropriate place.
 
-
-`zBrac` works with two types of files:
-
-
-- **Treatment files (txt)**: What we call a treatment file is a file 
-exported from a treatment file in zTree treatment files or a modified 
-version of the file by zBrac.
-
-- **Language files (xls):** These are the zBrac generated excel files. 
-The first column contains keys(or original phrases) and the second 
-column contains the relevant translation.
-
-
-#### Placeholder operator: [[ . ]]
-
-
-`zBrac` assumes that any text to be translated in a treatment file is 
-wrapped between two open and two close brackets. `[[text]]`. The 
-limitation of the software that it does not recognize automatically the 
-text in a ztree file. If your treatment file is already written, the 
-sentences or text blocks to be translated should be encapsulated by `[[` 
+If your treatment file is already written, the 
+sentences or text blocks to be translated should be enclosed by `[[` 
 and `]]`. If you will write a zTree treatment from scratch, it is better 
 to write all the text in double brackets. You can easily strip them out 
-by using zBrac.
+by using "Strip Brackets" function of zBrac.
+
+### Language file (xlsx)
+A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:
+| | |
+|---|---|---|
+| [[welcome message]]        | Welcome to our experiment |
+
+
+### Treatment file (txt)
+Treatment files (TXT): Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree.
 
 
 ## Installation
