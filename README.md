@@ -20,7 +20,7 @@ zBrac's design is specifically tailor for multicultural studies: By using the so
 
 zBrac is particularly useful when the tratment file contains same piece of text several times. Such duplicate text is a very common in z-Tree programming as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as a single key and it would be enough to provide the text to replace for this key at once. For an example, please see below for the Holt and Laury measure example.
 
- *zBrac is a free software (See GNU GPL-3 Licence). You can edit, modify and distribute it freely. Moreover it is not obligatory to cite the software, although it is highly apprciated.*
+**zBrac is a free software (See GNU GPL-3 Licence). You can edit, modify and distribute it freely. Moreover it is not obligatory to cite the software, although it is highly apprciated.**
 
 ### Citation information
 Currenlty a paper on zBrac is submitted to a scienfitic journal. If you use the software and cite it, please visit this page or contact us before you share your manuscript.
