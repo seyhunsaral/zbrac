@@ -23,7 +23,7 @@ zBrac is particularly useful when the tratment file contains same piece of text 
 **zBrac is a free software (See GNU GPL-3 Licence). You can edit, modify and distribute it freely. Moreover it is not obligatory to cite the software, although it is highly apprciated.**
 
 ### Citation information
-Currenlty a paper on zBrac is submitted to a scienfitic journal. If you use the software and cite it, please visit this page or contact us before you share your manuscript.
+Currently a paper about zBrac is submitted to a scienfitic journal. If you use the software and would like to cite it, please visit this page or contact us before you share your manuscript.
 
 ## Design
 ### Keys
