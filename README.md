@@ -12,11 +12,18 @@ Licensed under GNU General Public License v3.0
   
 ## About the project
 
-zBrac is a tool designed for easy modification of the text in z-Tree[1] treatment files.  With zBrac, you can export specified text into *a language file* and import it back after the the text modification or translation.
+zBrac is a tool designed for easy modification of the text in z-Tree[1] treatment files. With zBrac, you can export specified text into *a language file* and import it back after the the text modification or translation.
 
-The main advantage of this approach is that that the text in zTree treatmen files can be replaced easily ex-post, which means the coding process and the text design/translation process can be independently done.
+The main advantage of using zBrac for z-Tree experiment development is that that the text in zTree files can be modified easily at any time, which means the coding process and the text design/translation process can be independently done.
+
+zBrac's design is specifically tailor for multicultural studies: By using the software, you can code your experiment once and send the original language file for translation. zBrac also tries to tackle encoding issues special characters in z-Tree by offering different encoding options.
 
 zBrac is particularly useful when the tratment file contains same piece of text several times. Such duplicate text is a very common in z-Tree programming as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as a single key and it would be enough to provide the text to replace for this key at once. For an example, please see below for the Holt and Laury measure example.
+
+* zBrac is a free software![2] You can edit, modify and distribute it freely. Moreover it is not obligatory to cite the software, although it is highly apprciated *
+
+### Citation information
+Currenlty a paper on zBrac is submitted to a scienfitic journal. If you use the software and cite it, please visit this page or contact us before you share your manuscript.
 
 ## Design
 ### Keys
