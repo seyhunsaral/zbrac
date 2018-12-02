@@ -71,7 +71,9 @@ This language file template now looks like this. In the first column it contains
 
 ![xlsx-en](/visuals/img/png/xlsx-en.png)
 
-We create a german language file by translating the second column and keeping the first column of keys. Notice that the original zTree We translate sentences to german and save the file.
+We create a german language file by translating the second column and keeping the first column of keys. We translate sentences to german and save the file.
+
+Notice that the original zTree contains 40 duplicates the text "chance of winning" and with zBrac we modifiy that text only once. 
 
 ![xlsx-de](/visuals/img/png/xlsx-ge.png)
 
