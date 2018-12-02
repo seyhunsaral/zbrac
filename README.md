@@ -53,6 +53,10 @@ This is the english version we started with:
 
 ![zT-H&L-en](/visuals/img/png/zT-H&L-en.png)
 
+and the file looks like this on clients' screen:
+ 
+![zT-H&L-en](/visuals/img/png/zT-H&L-original.png)
+
 First we enclosed all the text we want to modify with double brackets. The file now looks like this: 
 
 ![zT-H&L-zBrac](/visuals/img/png/zT-H&L-zBrac.png)
@@ -87,20 +91,11 @@ And for the translated language file.
 ![zB-IL-selected](/visuals/img/png/zB-IL-selected.png)
 
 We clicked `Save treatment file as...` to create a translated version of 
-our treatment file and save it.
-
-![zB-save-treatment](/visuals/img/png/zB-save-treatment.png)
-
-Finaly we went back to zTree and choose `File` and then `Import` and 
-selected our translated treatment file.
-
-![zT-select-import](/visuals/img/png/zT-select-import.png)
-
-This is what our result looks like.
+our treatment file and save it. Finaly we went back to zTree and choose `File` and then `Import` and selected our translated treatment file. This is what our result looks like.
 
 ![zT-H&L-ge](/visuals/img/png/zT-H&L-ge.png)
 
-
+![zT-H&L-en](/visuals/img/png/zT-H&L-translated.png)
 ## Installation
 
 ### Installation with Windows Installer
