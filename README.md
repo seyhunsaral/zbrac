@@ -7,34 +7,29 @@
 ![weblogo](/visuals/img/png/weblogo.png)
 
 
-Created by Ali Seyhun Saral and Anna Schröter
-
-Licensed under GNU General Public License v3.0
-
-
+Created by Ali Seyhun Saral and Anna Schröter  
+Licensed under GNU General Public License v3.0  
+  
 ## About the project
 
+zBrac is a tool designed for easy modification of the text in z-Tree[1] treatment files.  With zBrac softwarare you can export specified text into *a language file* import it back after the the text modification or translation.
 
-zBrac<sup>1</sup>is a tool designed for easily modify the text of treatment files of z-Tree(Fischbacher,2007) treatment files.  With this software you can export specified text into "language files" import it back after the the text edit/translation.
+The main advantage of this approach is now that now that each key can be replaced easily ex-post, the coding process and the text design/translation process can be seperately worked on.
 
-zBrac is particularly useful when the tratment file contains same piece of text several times. This is very common as it is often needed to copy-paste stage tree elements in z-Tree.
+zBrac is particularly useful when the tratment file contains same piece of text several times. This is a very common practice in z-Tree as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as one item and it is enough to define the text for this key at once. For an example please check see the relevant section.
 
 ## Design
 ### Keys
-zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text that are double bracketed are called "**keys**".
+zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*".
 
-Each key acts as a placeholder and later potentially to be replaced by another text.
+Each key acts as a placeholder and later can be to be replaced by another text.
 
-To give an example, if you'd like to add a welcome message on your zTree file but you are not sure about the exact message at that point, you can just put `[[welcome message]]` on the appropriate place.
+To give an example, if you'd like to add a welcome message on your zTree file but you are not sure about the exact message at that point, you can just put `[[welcome message]]` in the desired place.
 
-If your treatment file is already written, the 
-sentences or text blocks to be translated should be enclosed by `[[` 
-and `]]`. If you will write a zTree treatment from scratch, it is better 
-to write all the text in double brackets. You can easily strip them out 
-by using the *Strip Brackets* function of zBrac.
+If you like to use zBrac on your own code and if your treatment file is already written, the text blocks to be translated should be enclosed by `[[` and `]]`. If you will write a zTree treatment from scratch, it is better to write all the text in double brackets. Afterwards the brackets can easily delete the brackets at once by using the *Strip Brackets* function of zBrac.
 
 ### Language files (xlsx)
-A language file is an excel file which in each row contains a key as the first column, and a text to replace the key in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:  
+A language file is an excel file which in each row contains a key as the first column, and a text to replace the key with in the second column. For instance, once we have our welcome message, an excel file following the structure would allow us to replace the key:  
 
 | (column1)  | (column2) |
 | ------------- | ------------- |
@@ -43,7 +38,10 @@ A language file is an excel file which in each row contains a key as the first c
 
 
 ### Treatment files (txt)
-Treatment files (TXT): Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree.
+Treatment files (TXT): Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree. 
+
+In summary, to prepare your ztt treatment file to work with zBrac, you shoud
+* Define the text,
 
 ## Example: Translating Holt and Laury Measure
 
