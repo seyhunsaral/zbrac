@@ -65,8 +65,6 @@ After that we opened zBrac and choose the `Create Language File` function. This 
 ![zB-CL](/visuals/img/png/zB-CL.png)
 
 By clicking `Save language file as...` we created a language file to save.
-
-
 This language file now looks like this:
 
 ![xlsx-en](/visuals/img/png/xlsx-en.png)

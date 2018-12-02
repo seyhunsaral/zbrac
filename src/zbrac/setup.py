@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='zbrac',
-    version='1.0.3',
+    version='1.0.4',
 	packages=['zbrac'],
     url='https://github.com/seyhunsaral/zbrac',
     license='GNU GPL-3',

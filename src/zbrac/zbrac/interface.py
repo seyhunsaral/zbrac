@@ -43,7 +43,7 @@ available_encodings = {
     }
 
 
-titletext = "zBrac 1.0.3"
+titletext = "zBrac 1.0.4"
 
 opening_credits = titletext + """ 
 Copyright © 2018, Ali Seyhun Saral and Anna Schröter
