@@ -131,7 +131,7 @@ Guidelines for contributing will be available soon.
  **Will the brackets visible when I add them into my code?**  
  - Yes, until you replace them by using a language file, they will be visible. However *stip brackets* function allows you to delete them all at once so that during the testing process, you can just check how do they look without. 
  
- **Why double brackets? A single bracket or ____ would be better, wouldn't it.**  
+ **Why double brackets? A single bracket or ____ would be better, wouldn't it?**  
  -As zBrac modifies the exported text file created by zTree, our choices are quite limited on that aspects. After several candidates, we choice double brackets according to these criteria:
 * **Absence in zTree code**: It is very unlikely that your code or text already have double brackets that might interfere with keys. 
 * **Easy to type**: Double brackets are relatively easy to write. With a US keyboard layout it takes just a pair of double-keystrokes to write them. In most of the European layouts, an additional AltGr should accompany those keystrokes.
