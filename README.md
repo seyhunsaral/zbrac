@@ -153,7 +153,7 @@ Guidelines for contributing will be available soon.
 -Currently we don't expect any financial costs to maintain zBrac (Well... except the domain name but it is negible at the moment). But contributing to the code, reporting bugs, feature requests are more than what we can hope for. 
 
 **Why did you make it as a desktop software? Why didn't you just create a web page with the same functionality?**  
--First reason is that maintaining a web server is both costly and time consuming. The second reason is downloading the source code and making modifications with it is much easier. 
+-The first reason is that maintaining a web server is both costly and time consuming and we are not able to handle it at the moment. And the second reason, for the users, downloading the python source code and making modifications with it is much easier if a software is in a self-contained package form. For these reasons we believe that the current for is an optimal way to publish the software. 
 
 
 ## Acknowledgements
