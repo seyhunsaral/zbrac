@@ -159,7 +159,7 @@ Guidelines for contributing will be available soon.
 ## Acknowledgements
 zBrac is designed and built at the Max Planck Institute for Research on Collective Goods. We used Python 3.6 and Qt5 to build it.
 
-We would like to thank Zvonimir Bašić, Andreas Drichoutis, Zwetelina Iliewa, Matteo Ploner, Piero Ronzani, Marco Tecilla and Fabian Winter for their valuable comments and/or for their help. 
+We would like to thank Zvonimir Bašić, Brian Cooper, Andreas Drichoutis, Zwetelina Iliewa, Matteo Ploner, Piero Ronzani, Marco Tecilla and Fabian Winter for their valuable comments and/or for their help. 
 
 
 ## References and Footnotes
