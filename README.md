@@ -13,7 +13,7 @@ Licensed under GNU General Public License v3.0
 ## About the project
 zBrac[1] is a tool designed for easy modification of the text in z-Tree[2] treatment files. With zBrac, you can export specified text into *a language file* and import it back after the text modification or translation.
 
-The main advantage of using zBrac for z-Tree experiment development is that that the text in zTree files can be modified easily at any time, which means the coding process and the text design/translation process can be independently done.
+The main advantage of using zBrac for z-Tree experiment development is that that the text in zTree files can be modified easily at any time, which means the coding process and the text design/translation process can be almost independently done.
 
 zBrac's design is specifically tailored for multicultural studies: By using the software, you can code your experiment once and send the original language file for translation. zBrac also tries to tackle encoding issues special characters in z-Tree by offering different encoding options.
 
@@ -48,7 +48,7 @@ Treatment files (TXT): Treatment files are basically zTree treatment files in TX
 
 
 ### Summary
-To prepare your ztt treatment file to work with zBrac, you shoud
+To prepare your treatment file(ZTT) to work with zBrac, you shoud
 * Define the text by adding double brackets at the beginning and at the end of the text. (ie. `[[this is my text]]
 * Export your file into a text file by using zTree
 
