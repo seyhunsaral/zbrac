@@ -24,6 +24,30 @@ zBrac is particularly useful when the treatment file contains the same piece of 
 ### Citing the software
 Currently, the paper that introduces zBrac is under review. If you use the software and would like to cite the paper, please visit this page or contact us before you share your manuscript to check the latest status of the paper.
 
+
+## Installation
+
+
+### Installation with Windows Installer
+
+You can get the installer from releases page:
+
+[Releases : Latest Release](https://github.com/seyhunsaral/zbrac/releases/latest)
+
+
+
+### Installation with pip (Windows, GNU/Linux, MacOS)
+
+If you have Python(>=3.6) and pip on your computer you can install with
+
+`pip3 install zbrac` or `pip install zbrac`
+
+
+Then `zbrac` command opens the software
+
+
+
+
 ## Design
 ### Keys
 zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*".
@@ -101,26 +125,6 @@ Finaly we go back to zTree and choose `File`> `Import` and select our translated
 ![zT-H&L-ge](./visuals/img/png/zT-H&L-ge.png)
 
 ![zT-H&L-en](./visuals/img/png/zT-H&L-translated.png)
-
-## Installation
-Current development version is v1.0.4 while the latest release is v1.0.3. For the deveopment version you can use the source files on this repository. For the relases please see below.
-
-### Installation with Windows Installer
-
-You can download the installer here:
-
-[zBrac-1-0-3-win32-setup.exe](https://github.com/seyhunsaral/zbrac/releases/download/v1.0.3/zBrac-1-0-3-win32-setup.exe)
-
-
-
-### Installation with pip (Windows, GNU/Linux, MacOS)
-
-If you have Python(>=3.6) and pip on your computer you can install with
-
-`pip3 install zbrac` or `pip install zbrac`
-
-
-Then `zbrac` command opens the software
 
 
 ## Contributing
