@@ -1,5 +1,6 @@
 venv-setup.txt
 \#*#
+*.*~
 .idea/
 
 # cx_freeze output executables
@@ -27,3 +28,4 @@ src/zbrac/zbrac.egg-info/
 
 # Package
 installer/Output
+
