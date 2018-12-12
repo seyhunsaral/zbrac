@@ -43,7 +43,7 @@ available_encodings = {
     }
 
 
-titletext = "zBrac 1.0.3"
+titletext = "zBrac 1.0.4"
 
 opening_credits = titletext + """ 
 Copyright © 2018, Ali Seyhun Saral and Anna Schröter
@@ -72,7 +72,7 @@ acknowledgements = """
 -------------------- Acknowledgements --------------------
 zBrac is designed and built at the Max Planck Institute for Research on Collective Goods. We used Python 3.6 and Qt5 to build it. We would like to thank open-source community for making it possible. 
 
-We would like to thank Zvonimir Bašić, Andreas Drichoutis, Zwetelina Iliewa, Matteo Ploner, Piero Ronzani, Marco Tecilla and Fabian Winter for their valuable comments and/or for their help. 
+We would like to thank Zvonimir Bašić, Brian Cooper, Andreas Drichoutis, Zwetelina Iliewa, Matteo Ploner, Piero Ronzani, Marco Tecilla and Fabian Winter for their valuable comments and/or for their help. 
 
 zBrac is a Free/Open-Source project and everyone is welcome to contribute. Click on "Documentation" for more information.
 ----------------------------------------------------------

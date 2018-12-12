@@ -1,15 +1,19 @@
-# zBrac : A text paste utility for zTree
+# zBrac : A multilanguage tool for zTree
+Created by Ali Seyhun Saral and Anna Schroeter  
+Licensed under GNU General Public License v3.0  
+
 ## About the project
+zBrac is a tool designed for easy modification of the text in z-Tree treatment files. With zBrac, you can export specified text into *a language file* and import it back after the text modification or translation.
 
-`zBrac`<sup>1</sup>is a tool designed for easy implementation of text and language files to `zTree` (Fischbacher,2007) treatment files.  With the software you can export "language files" in excel format from your zTree treatment files and import it back after the translation.
+The main advantage of using zBrac for z-Tree experiment development is that that the text in zTree files can be modified easily at any time, which means the coding process and the text design/translation process can be independently done.
 
-### Design
+zBrac's design is specifically tailored for multicultural studies: By using the software, you can code your experiment once and send the original language file for translation. zBrac also tries to tackle encoding issues special characters in z-Tree by offering different encoding options.
 
- `zBrac` works with two types of files:
+zBrac is particularly useful when the treatment file contains the same piece of text several times. Such duplicate text is very common in z-Tree programming as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as a single key and it would be enough to provide the text to replace for this key at once. For an example, please see below for the Holt and Laury measure example.
 
-- **Treatment files (txt)**: What we call a treatment file is a file exported from a treatment file in zTree treatment files or a modified version of the file by zBrac. 
-- **Language files (xls):** These are the zBrac generated excel files. The first column contains keys(or original phrases) and the second column contains the relevant translation. 
+**zBrac is free/open-source software (See GNU GPL-3 Licence). You can use, modify and distribute it. It is not obligatory to cite the software, although it is highly appreciated. (see below about citing the paper) **
 
-#### Placeholder operator: [[ . ]]
+### Citing the software
+Currently, a paper about zBrac is submitted to a scientific journal. If you use the software and would like to cite the paper, please visit this page or contact us before you share your manuscript to check the status of the paper.
 
-`zBrac` assumes that any text to be translated in a treatment file is wrapped between two open and two close brackets. `[[text]]`. The limitation of the software that it does not recognize automatically the text in a ztree file. If your treatment file is already written, the sentences or text blocks to be translated should be encapsulated by `[[` and `]]`. If you will write a zTree treatment from scratch, it is better to write all the text in double brackets. You can easily strip them out by using zBrac.
+For more information, visit project page: www.zbrac.com 

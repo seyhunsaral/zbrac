@@ -970,7 +970,7 @@
       </property>
       <widget class="QWidget" name="tab_CL">
        <attribute name="title">
-        <string>Create Language File</string>
+         <string>Create Language File Template</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
