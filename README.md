@@ -20,11 +20,10 @@ zBrac is particularly useful when the treatment file contains the same piece of 
  **zBrac is free/open-source software (See GNU GPL-3 License). You can use, modify and distribute it. It is not obligatory to cite the software, although it is highly appreciated (see below for citation information**
 
 ### Citing the software
-Currently, the paper that introduces zBrac is under review. If you use the software and would like to cite the paper, please visit this page or contact us before you share your manuscript to check the latest status of the paper.
-
+Currently, our paper that introduces zBrac and discusses its implications is under review by a scientific journal. If you use the software and would like to cite the paper, please visit this page or feel free contact us before you share your manuscript.
 
 ## Installation
-
+zBrac is a cross-platform software, meaning that it can be run under major operating systems. For now, we have an installation package availabe for Windows and for other platforms, it can be installed via pip.
 
 ### Installation with Windows Installer
 
@@ -36,19 +35,20 @@ You can get the installer from releases page:
 
 ### Installation with pip (Windows, GNU/Linux, MacOS)
 
-If you have Python(>=3.6) and pip on your computer you can install with
+If you have Python(>=3.6) and pip on your computer you can install zBrac from comannd line with the following command:
 
-`pip3 install zbrac` or `pip install zbrac`
+`pip3 install zbrac` ( or `pip install zbrac` if pip is for Python 3)
 
+Then if python binary folder is set up properly, `zbrac` command opens the software. zBrac can also be run with a python interpreter:
 
-Then `zbrac` command opens the software
-
-
-
+```
+import zbrac
+zbrac.interface.startgui()
+```
 
 ## Design
 ### Keys
-zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*".
+zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*"
 
 Each key acts as a placeholder and later can be to be replaced by another text.
 
