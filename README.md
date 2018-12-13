@@ -4,7 +4,7 @@
 
 # zBrac : A multilanguage tool for zTree
 
-![zBrac Logo](./visuals/img/png/weblogo.png)
+![zBrac Logo](./visuals/img/png/weblogo_small.png)
 
 
 Created by Ali Seyhun Saral and Anna Schroeter  
