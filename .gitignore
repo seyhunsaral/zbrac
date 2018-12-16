@@ -29,3 +29,5 @@ src/zbrac/zbrac.egg-info/
 # Package
 installer/Output
 
+# Flymd for emacs
+flymd*
