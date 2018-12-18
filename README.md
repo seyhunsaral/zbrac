@@ -2,31 +2,28 @@
 [![PyPI version](https://badge.fury.io/py/zbrac.svg)](https://badge.fury.io/py/zbrac)
 
 
-# zBrac : A multilanguage tool for zTree
+# zBrac : A multilanguage tool for z-Tree
 
-![zBrac Logo](./visuals/img/png/weblogo.png)
+![zBrac Logo](./visuals/img/png/weblogo_small.png)
 
 
 Created by Ali Seyhun Saral and Anna Schroeter  
-Licensed under GNU General Public License v3.0  
+Released under GNU General Public License v3.0  
   
 ## About the project
-zBrac[1] is a tool designed for easy modification of the text in z-Tree[2] treatment files. With zBrac, you can export specified text into *a language file* and import it back after the text modification or translation.
+zBrac[1] is a tool to facilitate the modification of texts in z-Tree[2] treatment files. With zBrac, you can export specified text into *a language file* and import it back after the text modification or translation. The main advantage of using zBrac is that the coding and text/editing and translation can be done independently.
 
-The main advantage of using zBrac for z-Tree experiment development is that that the text in zTree files can be modified easily at any time, which means the coding process and the text design/translation process can be almost independently done.
+zBrac's design is specifically tailored for cross-cultural studies: You can code your experiment once, send out excel sheets to translators and later implement those translations into your code directly from the file at any time. zBrac also tries to tackle issues with special characters in z-Tree by offering different encoding options.
 
-zBrac's design is specifically tailored for multicultural studies: By using the software, you can code your experiment once and send the original language file for translation. zBrac also tries to tackle encoding issues special characters in z-Tree by offering different encoding options.
+zBrac is particularly useful when the treatment file contains the same piece of text several times. Such duplicated pieces of texts are very common in z-Tree programming as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as a single key and it would be enough to provide the text to replace for this key at once. For an example, please see below for the Holt and Laury measure example.
 
-zBrac is particularly useful when the treatment file contains the same piece of text several times. Such duplicate text is very common in z-Tree programming as it is often needed to copy-paste stage tree elements. zBrac recognizes each unique key as a single key and it would be enough to provide the text to replace for this key at once. For an example, please see below for the Holt and Laury measure example.
-
- **zBrac is free/open-source software (See GNU GPL-3 Licence). You can use, modify and distribute it. It is not obligatory to cite the software, although it is highly appreciated. (see below about citing the paper)**
+ **zBrac is free/open-source software (See GNU GPL-3 License). You can use, modify and distribute it. It is not obligatory to cite the software, although it is highly appreciated (see below for citation information**
 
 ### Citing the software
-Currently, the paper that introduces zBrac is under review. If you use the software and would like to cite the paper, please visit this page or contact us before you share your manuscript to check the latest status of the paper.
-
+Currently, our paper that introduces zBrac and discusses its implications is under review by a scientific journal. If you use the software and would like to cite the paper, please visit this page or feel free contact us before you share your manuscript.
 
 ## Installation
-
+zBrac is a cross-platform software, meaning that it can be run under major operating systems. For now, we have an installation package availabe for Windows and for other platforms, it can be installed via pip.
 
 ### Installation with Windows Installer
 
@@ -38,19 +35,20 @@ You can get the installer from releases page:
 
 ### Installation with pip (Windows, GNU/Linux, MacOS)
 
-If you have Python(>=3.6) and pip on your computer you can install with
+If you have Python(>=3.6) and pip on your computer you can install zBrac from comannd line with the following command:
 
-`pip3 install zbrac` or `pip install zbrac`
+`pip3 install zbrac` ( or `pip install zbrac` if pip is for Python 3)
 
+Then if python binary folder is set up properly, `zbrac` command opens the software. zBrac can also be run with a python interpreter:
 
-Then `zbrac` command opens the software
-
-
-
+```
+import zbrac
+zbrac.interface.startgui()
+```
 
 ## Design
 ### Keys
-zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*".
+zBrac recognizes the text that are enclosed in double brackets: `[[This is a text]]`. Each piece of text inticated as such are called "*keys*"
 
 Each key acts as a placeholder and later can be to be replaced by another text.
 
@@ -154,7 +152,7 @@ Guidelines for contributing will be available soon.
 -Not directly, but it just takes few seconds to copy and paste relevant column to google translate interface and then putting it back to a language file. 
 
 **How can I contribute?**  
--Currently we don't expect any financial costs to maintain zBrac (Well... except the domain name but it is negible at the moment). But contributing to the code, reporting bugs, feature requests are more than what we can hope for. 
+-Contributing to the source code, reporting bugs, feature requests are more than what we can hope for. 
 
 **Why did you make it as a desktop software? Why didn't you just create a web page with the same functionality?**  
 -The first reason is that maintaining a web server is both costly and time consuming and we are not able to handle it at the moment. And the second reason, for the users, downloading the python source code and making modifications with it is much easier if a software is in a self-contained package form. For these reasons we believe that the current for is an optimal way to publish the software. 
