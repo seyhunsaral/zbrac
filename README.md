@@ -66,12 +66,12 @@ A language file is an excel file which in each row contains a key as the first c
 Each language file is designed to be a set of text. For instance if you would like to have your experiment in different languages, ideally each one of them should have its own language file.
 
 ### Treatment files (txt)
-Treatment files (TXT): Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree. 
+Treatment files are basically zTree treatment files in TXT. They can be exported/imported using zTree. 
 
 
 ### Summary
 To prepare your treatment file(ZTT) to work with zBrac, you shoud
-* Define the text by adding double brackets at the beginning and at the end of the text. (ie. `[[this is my text]]
+* Define the text by adding double brackets at the beginning and at the end of the text. (ie. `[[this is my text]]`)
 * Export your file into a text file by using zTree
 
 ## Example: Translating Holt and Laury Measure[3]
@@ -91,7 +91,7 @@ First we enclose all the text we want to modify with double brackets. The file n
 ![zT-H&L-zBrac](./visuals/img/png/zT-H&L-zBrac.png)
 
 Then we exported the file to a text file by clicking: 
-`File` then `Export` and `Treatment`.
+`File` > `Export` > `Treatment`.
 
 The exported TXT files with brackets act like our master file. We can replace the values of the keys by using a treatment file.
 
@@ -118,7 +118,7 @@ Language File` tab and specifiy the treatment file and the language file that co
 
 We click `Save treatment file as...` to create a translated version of our treatment file and save it. 
 
-Finaly we go back to zTree and choose `File`> `Import` and select our translated treatment file. This is what our result looks like:
+Finaly we go back to zTree and choose `File` > `Import` and select our translated treatment file. This is what our result looks like:
 
 ![zT-H&L-ge](./visuals/img/png/zT-H&L-ge.png)
 
@@ -130,7 +130,7 @@ Finaly we go back to zTree and choose `File`> `Import` and select our translated
 Guidelines for contributing will be available soon.
 
 ## FAQ
- **Will the brackets visible when I add them into my code?**  
+ **Will the brackets  be visible when I add them into my code?**  
  - Yes, until you replace them by using a language file, they will be visible. However *stip brackets* function allows you to delete them all at once so that during the testing process, you can just check how do they look without. 
  
  **Why double brackets? A single bracket or ____ would be better, wouldn't it?**  
@@ -145,7 +145,7 @@ Guidelines for contributing will be available soon.
 **Why citing zBrac is not a requirement?**  
 -For a truly free software spirit, we wanted to use GNU GPL-3 License. We do not think that it should be the norm but it is just a matter of choice. However we still believe that citing those tools are beneficial for advertising an "open-science" viewpoint. 
 
-**Why language files Microsoft Excel format? Wouldn't it contradicts with your free software spirit?**  
+**Why language files are in Microsoft Excel format? Wouldn't it contradicts with your free software spirit?**  
 -For the language files, we needed to have a format that allows multiple encodings while being widespread and easy to work on. Unfortunately `CSV` format doesn't satisfiy these criteria. Moreover there are fantastic free software tools such as LibreOffice that allows to create and edit XLSX files. 
 
 **Can I google translate my text with zBrac?**  
@@ -155,7 +155,7 @@ Guidelines for contributing will be available soon.
 -Contributing to the source code, reporting bugs, feature requests are more than what we can hope for. 
 
 **Why did you make it as a desktop software? Why didn't you just create a web page with the same functionality?**  
--The first reason is that maintaining a web server is both costly and time consuming and we are not able to handle it at the moment. And the second reason, for the users, downloading the python source code and making modifications with it is much easier if a software is in a self-contained package form. For these reasons we believe that the current for is an optimal way to publish the software. 
+-The first reason is that maintaining a web server is both costly and time consuming and we are not able to handle it at the moment. And the second reason, for the users, downloading the python source code and making modifications with it is much easier if a software is in a self-contained package form. For these reasons we believe that the current form is an optimal way to publish the software. 
 
 
 ## Acknowledgements
