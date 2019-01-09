@@ -94,13 +94,12 @@ class ConsoleStream(QObject):
 
 
 class MyWindow(QMainWindow):
-    __element1 = 123
-    CURRENTWD = os.getcwd()
 
     def __init__(self):
         super(MyWindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        #self.home = home
 
         ### Create Language File (CL) Items
         # TODO: Create filetype handling function. The filetype definitions are not the nicest way to implement, but we have to roll out soon, we can just handle it after the release.
@@ -290,10 +289,32 @@ class MyWindow(QMainWindow):
 
 def startgui():
     app = QApplication(sys.argv)
+    # == Config management - Enter
+    # TODO Create a nice function
+    HOMED = os.path.expanduser("~")
+    config_dir = os.path.join(HOMED,".config","zbrac")
+    config_filepath = os.path.join(config_dir,"zbrac.conf")
+    if (os.path.isfile(config_filepath)):
+        config_file = open(config_filepath, "r")
+        MyWindow.CURRENTWD = config_file.readline()
+        config_file.close()
+    else:
+        MyWindow.CURRENTWD = os.getcwd()
+    # == 
+
     window = MyWindow()
     consolestream = ConsoleStream()
     consolestream.message.connect(window.on_ConsoleStream_message)
 
     sys.stdout = consolestream
+    
+    end = app.exec_()
+    # == Config management - Exit
+    if not os.path.exists(config_dir):
+            os.makedirs(config_dir)
+    config_file = open(config_filepath,'w')
+    config_file.write(window.CURRENTWD)
+    config_file.close()
+    # == 
 
-    sys.exit(app.exec_())
+    sys.exit(end)
