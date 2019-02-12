@@ -15,9 +15,27 @@
 
 
 import zbrac.interface
+import argparse
+import sys
+
+parser = argparse.ArgumentParser(description='zBrac')
+parser.add_argument('name',
+                    help='name of the file')
+parser.add_argument('--version',action='store_true',
+                    help='gives the version of zBrac')
+parser.add_argument('-p',type=int,metavar='N',
+                    help='do something with the int')
+
 def main():
-    zbrac.interface.startgui()
+    args=parser.parse_args(sys.argv)
+    
+    if(args.version):
+        print(zbrac.interface.titletext)
+    if(args.p!=None):
+        print('Hi '+str(args.p))
+    if(len(sys.argv)==1):
+        zbrac.interface.startgui()
 
 
 if __name__ == '__main__':
-    zbrac.interface.startgui()
+    main()
