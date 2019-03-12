@@ -50,6 +50,12 @@ def save_treatment_file(treatment_text, filepath, encoding = "UTF-8"):
     print('Saved treatment file:' + filepath)
 
 
+def remove_escapes(stringvar):
+    return(stringvar.replace('\\"','\"'))
+
+def add_escapes(stringvar):
+    return(stringvar.replace('\"','\\"'))
+
 def get_matched_entries(textblock):
     matched_items = re.findall("\[\[.*?\]\]", textblock)
     if not matched_items:
@@ -58,15 +64,16 @@ def get_matched_entries(textblock):
     unique_matched_items.sort()
     print('    Grabbed following keywords:')
     print('  ' + '-' * 35)
-    for item in unique_matched_items: print('    ' + item)
+    for item in unique_matched_items: print('    ' + remove_escapes(item))
     print('-' * 35)
     print(str(len(unique_matched_items)) + ' items in total')
     print('')
     return(unique_matched_items)
 
+
 def create_own_list(keywordlist):
     try:
-        escaped_keywordlist = list(map(lambda each:each.replace('\\"','\"'), keywordlist))
+        escaped_keywordlist = list(map(remove_escapes, keywordlist))
         stripped_keywordlist = list(map(lambda each:each.replace('[[','').replace(']]',''), escaped_keywordlist))
         return([escaped_keywordlist,stripped_keywordlist])
     except:
@@ -106,14 +113,14 @@ def xlsx_to_dictionary(filepath):
         for row in worksheet.iter_rows():
             if (len(row) > 1):
                 if pattern.match(row[0].value):
-                    language_dict[row[0].value.replace('\"','\\"')] = row[1].value.replace('\"','\\"')
+                    language_dict[add_escapes(row[0].value)] = add_escapes(row[1].value)
 
         workbook.close()
         print('Loaded language file:' + filepath)
         print('')
         print('    Grabbed following translations:')
         print('  ' + '-' * 35)
-        for item in language_dict: print(" \n     " + item + "\n    -> " + language_dict[item])
+        for item in language_dict: print(" \n     " + remove_escapes(item) + "\n    -> " + remove_escapes(language_dict[item]))
         if (not len(language_dict) > 0):
             print("No keywords exist in the dictionary file")
             return
