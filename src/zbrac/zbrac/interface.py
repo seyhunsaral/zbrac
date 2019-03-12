@@ -26,21 +26,27 @@ from PyQt5 import uic
 import zbrac.functions as functions
 from zbrac.mainwindow import Ui_MainWindow
 
-available_encodings = {
-    'West Europe(ISO-8859-1)': 'ISO-8859-1'
-    , 'Central and Eastern Europe(ISO-8859-2)': 'ISO-8859-2'
-    , 'Esperanto, Maltese(ISO-8859-3)': 'ISO-8859-3'
-    , 'Baltic languagues(ISO-8859-4)': 'ISO-8859-4'
-    , 'Bulg., Byel., Maced., Russ., Serb.(ISO-8859-5)': 'ISO-8859-5'
-    , 'Arabic(ISO-8859-6)': 'ISO-8859-6'
-    , 'Greek(ISO-8859-7)': 'ISO-8859-7'
-    , 'Hebrew(ISO-8859-8)': 'ISO-8859-8'
-    , 'Turkish(ISO-8859-9)': 'ISO-8859-9'
-    , 'Nordic languages(ISO-8859-10)': 'ISO-8859-10'
-    , 'Baltic languages(ISO-8859-13)': 'ISO-8859-13'
-    , 'Celtic languages(ISO-8859-14)': 'ISO-8859-14'
-    , 'Western Europe(ISO-8859-15)': 'ISO-8859-15'
-    }
+available_encodings_list = [('West Europe(ISO-8859-1)', 'ISO-8859-1'), 
+			('Central and Eastern Europe(ISO-8859-2)', 'ISO-8859-2'), 
+			('Esperanto, Maltese(ISO-8859-3)', 'ISO-8859-3'), 
+			('Baltic languagues(ISO-8859-4)', 'ISO-8859-4'), 
+			('Bulg., Byel., Maced., Russ., Serb.(ISO-8859-5)', 'ISO-8859-5'), 
+			('Arabic(ISO-8859-6)', 'ISO-8859-6'), 
+			('Greek(ISO-8859-7)', 'ISO-8859-7'), 
+			('Hebrew(ISO-8859-8)', 'ISO-8859-8'), 
+			('Turkish(ISO-8859-9)', 'ISO-8859-9'), 
+			('Nordic languages(ISO-8859-10)', 'ISO-8859-10'), 
+			('Baltic languages(ISO-8859-13)', 'ISO-8859-13'), 
+			('Celtic languages(ISO-8859-14)', 'ISO-8859-14'), 
+			('Western Europe(ISO-8859-15)', 'ISO-8859-15')
+			]
+
+available_encodings = []
+
+for tup in available_encodings_list:
+    available_encodings.append(tup[0])
+
+available_encodings_dict = dict(available_encodings_list)
 
 
 titletext = "zBrac 1.0.4"
@@ -105,19 +111,19 @@ class MyWindow(QMainWindow):
         # TODO: Create filetype handling function. The filetype definitions are not the nicest way to implement, but we have to roll out soon, we can just handle it after the release.
         self.ui.button_treatment_CL.clicked.connect(lambda: self.browse_file(self.ui.line_treatment_CL,"Text files (*.txt);;All Files(*.*)"))
         self.ui.button_generate_CL.clicked.connect(self.generate_language)
-        self.ui.combo_encoding_CL.addItems(list(available_encodings))
+        self.ui.combo_encoding_CL.addItems(available_encodings)
 
         ### Implement Language (IL) Items
         self.ui.button_treatment_IL.clicked.connect(lambda: self.browse_file(self.ui.line_treatment_IL,"Text files (*.txt);;All Files(*.*)"))
         self.ui.button_language_IL.clicked.connect(lambda: self.browse_file(self.ui.line_language_IL,"Excel files (*.xlsx);;Excel 97-2013 Files (*.xls);;All Files(*.*)"))
         self.ui.button_generate_IL.clicked.connect(self.generate_treatment)
-        self.ui.combo_encoding_input_IL.addItems(list(available_encodings))
-        self.ui.combo_encoding_output_IL.addItems(list(available_encodings))
+        self.ui.combo_encoding_input_IL.addItems(available_encodings)
+        self.ui.combo_encoding_output_IL.addItems(available_encodings)
 
         ### Strip Brackets (SB) Items
         self.ui.button_treatment_SB.clicked.connect(lambda: self.browse_file(self.ui.line_treatment_SB,"Text files (*.txt);;All Files(*.*)"))
         self.ui.button_generate_SB.clicked.connect(self.generate_stripped)
-        self.ui.combo_encoding_SB.addItems(list(available_encodings))
+        self.ui.combo_encoding_SB.addItems(available_encodings)
 
         ### Left side buttons
         self.ui.button_documentation.clicked.connect(self.on_pushButtonPrint_clicked)
@@ -181,7 +187,7 @@ class MyWindow(QMainWindow):
     
     def generate_language(self):
         treatment_path = self.ui.line_treatment_CL.text()
-        treatment_encoding = available_encodings[str(self.ui.combo_encoding_CL.currentText())]
+        treatment_encoding = available_encodings_dict[str(self.ui.combo_encoding_CL.currentText())]
         if (not (os.path.isfile(treatment_path))):
             self.pop_error('The path do not exist')
             return (False)
@@ -215,8 +221,8 @@ class MyWindow(QMainWindow):
     def generate_treatment(self):
         path_treatment_in = self.ui.line_treatment_IL.text()
         path_language_in = self.ui.line_language_IL.text()
-        treatment_encoding_input = available_encodings[str(self.ui.combo_encoding_input_IL.currentText())]
-        treatment_encoding_output = available_encodings[str(self.ui.combo_encoding_output_IL.currentText())]
+        treatment_encoding_input = available_encodings_dict[str(self.ui.combo_encoding_input_IL.currentText())]
+        treatment_encoding_output = available_encodings_dict[str(self.ui.combo_encoding_output_IL.currentText())]
         if (not (os.path.isfile(path_treatment_in))):
             self.pop_error('Problem with the treatment file')
 
@@ -245,7 +251,7 @@ class MyWindow(QMainWindow):
 
     def generate_stripped(self):
         path_treatment_in = self.ui.line_treatment_SB.text()
-        treatment_encoding = available_encodings[str(self.ui.combo_encoding_SB.currentText())]
+        treatment_encoding = available_encodings_dict[str(self.ui.combo_encoding_SB.currentText())]
 
         if (not (os.path.isfile(path_treatment_in))):
             self.pop_error('Problem with the treatment file')
