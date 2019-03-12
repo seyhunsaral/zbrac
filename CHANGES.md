@@ -4,7 +4,7 @@
 
 * New feature: Remember the last directory
 * Fix: Stable order of the available encodings
-* Fix: Recognizes escape characters 
+* Fix: Recognize escape characters 
 
 ## Version 1.0.4
 
