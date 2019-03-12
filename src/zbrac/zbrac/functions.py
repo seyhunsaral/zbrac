@@ -66,8 +66,9 @@ def get_matched_entries(textblock):
 
 def create_own_list(keywordlist):
     try:
-        stripped_keywordlist = list(map(lambda each:each.replace('[[','').replace(']]',''), keywordlist))
-        return([keywordlist,stripped_keywordlist])
+        escaped_keywordlist = list(map(lambda each:each.replace('\\"','\"'), keywordlist))
+        stripped_keywordlist = list(map(lambda each:each.replace('[[','').replace(']]',''), escaped_keywordlist))
+        return([escaped_keywordlist,stripped_keywordlist])
     except:
         if keywordlist == False:
             print('!!Error: Some problem occurred. This might be due to an empty list of keywords.')
@@ -105,7 +106,7 @@ def xlsx_to_dictionary(filepath):
         for row in worksheet.iter_rows():
             if (len(row) > 1):
                 if pattern.match(row[0].value):
-                    language_dict[row[0].value] = row[1].value
+                    language_dict[row[0].value.replace('\"','\\"')] = row[1].value.replace('\"','\\"')
 
         workbook.close()
         print('Loaded language file:' + filepath)
