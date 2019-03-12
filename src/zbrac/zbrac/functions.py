@@ -51,10 +51,10 @@ def save_treatment_file(treatment_text, filepath, encoding = "UTF-8"):
 
 
 def remove_escapes(stringvar):
-    return(stringvar.replace('\\"','\"'))
+    return(stringvar.replace('\\"','\"').replace('\\\\','\\'))
 
 def add_escapes(stringvar):
-    return(stringvar.replace('\"','\\"'))
+    return(stringvar.replace('\\','\\\\').replace('\"','\\"'))
 
 def get_matched_entries(textblock):
     matched_items = re.findall("\[\[.*?\]\]", textblock)
