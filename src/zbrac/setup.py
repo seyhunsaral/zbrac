@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setuptools.setup(
     name='zbrac',
     python_requires='>3.6.0',
-    version='1.0.4',
+    version='1.0.5',
 	packages=['zbrac'],
     url='https://github.com/seyhunsaral/zbrac',
     license='GNU GPL-3',
@@ -16,7 +16,8 @@ setuptools.setup(
     author_email='seyhunsaral@gmail.com, schroeter@coll.mpg.de',
     description='A multilanguage tool for zTree',
     long_description=long_description,  # Optional
-    long_description_content_type='text/markdown', install_requires=['openpyxl>=2.5.8','PyQt5>=5.11.3','PyQt5-sip>=4.19.13','PyQt5.sip>=4.19.13','urllib3>=1.24.1','XlsxWriter>=1.1.1'],
+    long_description_content_type='text/markdown', 
+	install_requires=['openpyxl>=2.5.8','PyQt5>=5.11.3','PyQt5-sip>=4.19.13','PyQt5.sip>=4.19.13','urllib3>=1.24.1','XlsxWriter>=1.1.1'],
     entry_points = {'console_scripts': ['zbrac=zbrac.start:main'],},
     zip_safe=False
 )
