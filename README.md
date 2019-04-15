@@ -2,7 +2,7 @@
 [![PyPI version](https://badge.fury.io/py/zbrac.svg)](https://badge.fury.io/py/zbrac)
 
 
-# zBrac : A multilanguage tool for z-Tree
+# zBrac : A Multilanguage Tool for z-Tree
 
 ![zBrac Logo](./visuals/img/png/weblogo_small.png)
 
