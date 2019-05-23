@@ -14,19 +14,19 @@
   * Runs `python setup_cxfreeze.py build` based on the file `build_origin.py` 
     * Executable files are generated `build/` which is not tracked by git
 
-* Create installer 
+* Create installer  
   * InnoSetup has to be installed on the system
   * Run `installer/setup-pack.iss` with InnoSetup
   * The installer will be generated in `/installer`
 
-* Release on PyPi
+* Release on PyPi (Maintainers only)
   * Create package gzips by `python setup.py sdist bdist_wheel`
   * Upload by `twine upload dist/*` (twine needs to be installed)
 
-* Release on GitHub 
+* Release on GitHub (Maintainers only)
   * Upload exe file on github releases 
 
-* Merge develop to master
+* Merge develop to master (Maintainers only)
   * `git checkout master`
   * `git merge develop --no-ff` 
   * `git tag "vX.X.X"`
