@@ -1,6 +1,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![PyPI version](https://badge.fury.io/py/zbrac.svg)](https://badge.fury.io/py/zbrac)
-
+[![Travix-CI](https://travis-ci.org/seyhunsaral/zbrac.svg?branch=master)](https://travis-ci.org/seyhunsaral/zbrac)
 
 # zBrac : A Multilanguage Tool for z-Tree
 
