@@ -12,7 +12,7 @@ addons:
       - "python3-pip"
 install:
  - python3 --version
- - sudo apt-get --qq update
+ - sudo apt-get -qq update
  - sudo pip3 install --upgrade pip -i https://pypi.python.org/simple
  - pip3 install -r requirements.txt
  
