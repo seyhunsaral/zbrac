@@ -11,6 +11,5 @@ install:
  - sh ../../generate_externals.cmd 
  - pip install ./src/zbrac/.
 
- 
  script:
   - python ./continuous_integration/travis/testoftest.py
