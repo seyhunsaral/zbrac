@@ -5,11 +5,6 @@ python:
   - "3.6"
   - "3.7"
 
-addons:
-  apt:
-    packages:
-      - "python3"
-      - "python3-pip"
 install:
  - python3 --version
  - sudo apt-get -qq update
