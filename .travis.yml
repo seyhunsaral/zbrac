@@ -6,10 +6,9 @@ python:
   - "3.7"
 
 install:
- - python3 --version
  - sudo apt-get -qq update
- - sudo pip3 install --upgrade pip -i https://pypi.python.org/simple
- - pip3 install -r requirements.txt
+ - pip install ./zbrac/src/zbrac/.
+
  
 # script:
 #  - python3 ./src/zbrac/run.py 
