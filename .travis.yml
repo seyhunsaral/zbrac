@@ -7,8 +7,10 @@ python:
 
 install:
  - sudo apt-get -qq update
+ - pip install -r requirements.txt
+ - sh ../../generate_externals.cmd 
  - pip install ./src/zbrac/.
 
  
-# script:
-#  - python3 ./src/zbrac/run.py 
+ script:
+  - python ./continuous_integration/travis/testoftest.py
