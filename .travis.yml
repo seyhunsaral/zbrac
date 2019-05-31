@@ -12,7 +12,7 @@
  install:
   - sudo apt-get -qq update
   - pip install -r requirements.txt
-  - sh ../../generate_externals.cmd 
+  - sh ./generate_externals.cmd 
   - pip install ./src/zbrac/.
 
  script:
