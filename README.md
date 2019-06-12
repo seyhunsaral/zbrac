@@ -20,7 +20,11 @@ zBrac is particularly useful when the treatment file contains the same piece of 
  **zBrac is free/open-source software (See GNU GPL-3 License). You can use, modify and distribute it. It is not obligatory to cite the software, although it is highly appreciated (see below for citation information).**
 
 ### Citing the software
-Our paper that introduces zBrac and discusses its implications is accepted by *Journal of Behavioral and Experimental Finance* and still in press. If you use the software and would like to cite the paper, please visit this page or feel free contact us before you share your manuscript.
+Our paper that introduces zBrac and discusses its use is published by the _Journal of Behavioral and Experimental Finance_ and full text can be found [here](https://www.sciencedirect.com/science/article/pii/S2214635018302661).
+
+The citation information is as follows:
+
+Saral, A. S., & Schröter, A. M. (2019). zBrac—A multilanguage tool for z-Tree. _Journal of Behavioral and Experimental Finance_.
 
 ## Installation
 zBrac is a cross-platform software, meaning that it can be run under major operating systems. For now, we have an installation package availabe for Windows. For other platforms, it can be installed via pip.
