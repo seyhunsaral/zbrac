@@ -26,6 +26,8 @@ The citation information is as follows:
 
 Saral, A. S., & Schröter, A. M. (2019). zBrac—A multilanguage tool for z-Tree. _Journal of Behavioral and Experimental Finance_.
 
+Please feel free to get in touch with the authors if your institute do not have the access to the paper. 
+
 ## Installation
 zBrac is a cross-platform software, meaning that it can be run under major operating systems. For now, we have an installation package availabe for Windows. For other platforms, it can be installed via pip.
 
