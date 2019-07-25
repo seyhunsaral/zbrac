@@ -56,6 +56,12 @@ def remove_escapes(stringvar):
 def add_escapes(stringvar):
     return(stringvar.replace('\\','\\\\').replace('\"','\\"'))
 
+def add_escapes_dict(dictionary):
+    escaped_dict = dict()
+    for key in dictionary:
+        escaped_dict[add_escapes(key)] = add_escapes(dictionary[key])
+    return escaped_dict
+
 def get_matched_entries(textblock):
     matched_items = re.findall("\[\[.*?\]\]", textblock)
     if not matched_items:
