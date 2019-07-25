@@ -56,6 +56,12 @@ def remove_escapes(stringvar):
 def add_escapes(stringvar):
     return(stringvar.replace('\\','\\\\').replace('\"','\\"'))
 
+def add_escapes_dict(dictionary):
+    escaped_dict = dict()
+    for key in dictionary:
+        escaped_dict[add_escapes(key)] = add_escapes(dictionary[key])
+    return escaped_dict
+
 def get_matched_entries(textblock):
     matched_items = re.findall("\[\[.*?\]\]", textblock)
     if not matched_items:
@@ -113,19 +119,20 @@ def xlsx_to_dictionary(filepath):
         for row in worksheet.iter_rows():
             if (len(row) > 1):
                 if pattern.match(row[0].value):
-                    language_dict[add_escapes(row[0].value)] = add_escapes(row[1].value)
+                    language_dict[row[0].value] = row[1].value
 
         workbook.close()
         print('Loaded language file:' + filepath)
         print('')
         print('    Grabbed following translations:')
         print('  ' + '-' * 35)
-        for item in language_dict: print(" \n     " + remove_escapes(item) + "\n    -> " + remove_escapes(language_dict[item]))
+        for item in language_dict: print(" \n     " + item + "\n    -> " + language_dict[item])
         if (not len(language_dict) > 0):
             print("No keywords exist in the dictionary file")
             return
         print('  ' + '-' * 35)
         print(str(len(language_dict)) + ' items in total')
+        language_dict = add_escapes_dict(language_dict)
         return (language_dict)
     except:
         print("Error: A problem occured with reading excel file. Does it contain the keys as the first column and the text in second column?")
@@ -193,7 +200,7 @@ def implement_language_file(path_treatment_in, path_language_in, path_treatment_
 def strip_brackets(source_text):
     matched_entries = get_matched_entries(source_text)
     language_list = create_own_list(matched_entries)
-    language_dict = list_to_dict(language_list)
+    language_dict = add_escapes_dict(list_to_dict(language_list))
     target_text = replace_from_dictionary(language_dict, source_text)
     return(target_text)
 
