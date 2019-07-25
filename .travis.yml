@@ -2,8 +2,9 @@
  sudo: required
  branches:
   only:
-    - A
     - master
+    - develop
+    - fix_escape_backslash
  language: python
  python:
   - "3.6"
