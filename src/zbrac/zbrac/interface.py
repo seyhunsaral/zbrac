@@ -38,7 +38,8 @@ available_encodings_list = [('West Europe(ISO-8859-1)', 'ISO-8859-1'),
 			('Nordic languages(ISO-8859-10)', 'ISO-8859-10'), 
 			('Baltic languages(ISO-8859-13)', 'ISO-8859-13'), 
 			('Celtic languages(ISO-8859-14)', 'ISO-8859-14'), 
-			('Western Europe(ISO-8859-15)', 'ISO-8859-15')
+			('Western Europe(ISO-8859-15)', 'ISO-8859-15'),
+            ('Unicode(UTF-8)','utf-8')
 			]
 
 available_encodings = []
