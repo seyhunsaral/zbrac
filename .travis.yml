@@ -7,8 +7,8 @@
     - fix_escape_backslash
  language: python
  python:
-  - "3.6"
-  - "3.7"
+  - 3.6
+  - 3.7
 
  install:
   - sudo apt-get -qq update
