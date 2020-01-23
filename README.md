@@ -9,6 +9,8 @@
 
 Created by Ali Seyhun Saral and Anna Schroeter  
 Released under GNU General Public License v3.0  
+
+Note: Here are the slides of the presentation that I made in ESA European Meeting in Dijon: [Slides on Google Slides](https://docs.google.com/presentation/d/1fO5shxH-P4W4LrzcUG1VLefAO-cgfqqWao3i3TsJ80A/edit?usp=sharing)
   
 ## About the project
 zBrac[1] is a tool to facilitate text modification of z-Tree[2] treatment files. With zBrac, you can export specified text into *a language file* and import it back after the text modification or translation. The main advantage of using zBrac is that the coding and text/editing can be done independently.
