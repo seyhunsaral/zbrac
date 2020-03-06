@@ -50,7 +50,7 @@ for tup in available_encodings_list:
 available_encodings_dict = dict(available_encodings_list)
 
 
-titletext = "zBrac 1.0.5"
+titletext = "zBrac 1.0.7"
 
 opening_credits = titletext + """ 
 Copyright © 2018, Ali Seyhun Saral and Anna Schröter

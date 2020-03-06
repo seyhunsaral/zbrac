@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "zBrac"
-#define MyAppVersion "1.0.5"
+#define MyAppVersion "1.0.7"
 #define MyAppName "zBrac"
 #define MyAppPublisher "Ali Seyhun Saral, Anna Maria Schroeter"
 #define MyAppURL "https://github.com/seyhunsaral/zBrac"
@@ -23,7 +23,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
 LicenseFile=..\LICENSE
-OutputBaseFilename=zBrac-1-0-5-win32-setup
+OutputBaseFilename=zBrac-1-0-7-win32-setup
 SetupIconFile=..\res\icon.ico
 Compression=lzma
 SolidCompression=yes
