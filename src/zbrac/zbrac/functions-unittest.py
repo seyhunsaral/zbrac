@@ -4,6 +4,7 @@ from functions import add_escapes
 from functions import get_matched_entries
 from functions import create_own_list
 from functions import list_to_dict
+from functions import replace_from_dictionary
 
 class TestStringMethods(unittest.TestCase):
 
@@ -41,6 +42,12 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(list_to_dict(list),{'[[a "test" file]]':'a "test" file','[[replaced text]]':'replaced text'})
         self.assertEqual(list_to_dict(list2),{'[[a "test" file]]':'a "test" file'})
         self.assertRaises(Exception, list_to_dict, [no_list])
+
+    def test_replace_from_dictionary(self):
+        text = """This is [[a \"test\" file]]. Things there should be a bracket ([) in the output and there should be a [[replaced text]]."""
+        dict = {'[[a \"test\" file]]':'new \"text\"','[[replaced text]]':'random text'}
+        target_text = """This is new \"text\". Things there should be a bracket ([) in the output and there should be a random text."""
+        self.assertEqual(replace_from_dictionary(dict,text),target_text)
 
 if __name__ == '__main__':
     unittest.main()
