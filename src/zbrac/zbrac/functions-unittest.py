@@ -3,6 +3,7 @@ from functions import remove_escapes
 from functions import add_escapes
 from functions import get_matched_entries
 from functions import create_own_list
+from functions import list_to_dict
 
 class TestStringMethods(unittest.TestCase):
 
@@ -32,6 +33,14 @@ class TestStringMethods(unittest.TestCase):
         empty_list = False
         self.assertEqual(create_own_list(list),[['[[a "test" file]]','[[replaced text]]'],['a "test" file','replaced text']])
         self.assertFalse(create_own_list(empty_list))
+
+    def test_list_to_dict(self):
+        list = [['[[a "test" file]]','[[replaced text]]'],['a "test" file','replaced text']]
+        list2 = [['[[a "test" file]]','[[replaced text]]'],['a "test" file']]
+        no_list = 45
+        self.assertEqual(list_to_dict(list),{'[[a "test" file]]':'a "test" file','[[replaced text]]':'replaced text'})
+        self.assertEqual(list_to_dict(list2),{'[[a "test" file]]':'a "test" file'})
+        self.assertRaises(Exception, list_to_dict, [no_list])
 
 if __name__ == '__main__':
     unittest.main()
