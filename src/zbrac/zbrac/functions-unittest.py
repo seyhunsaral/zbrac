@@ -5,6 +5,7 @@ from functions import get_matched_entries
 from functions import create_own_list
 from functions import list_to_dict
 from functions import replace_from_dictionary
+from functions import strip_brackets
 
 class TestStringMethods(unittest.TestCase):
 
@@ -48,6 +49,11 @@ class TestStringMethods(unittest.TestCase):
         dict = {'[[a \"test\" file]]':'new \"text\"','[[replaced text]]':'random text'}
         target_text = """This is new \"text\". Things there should be a bracket ([) in the output and there should be a random text."""
         self.assertEqual(replace_from_dictionary(dict,text),target_text)
+
+    def test_strip_brackets(self):
+        text = """This is [[a \"test\" file]]. Things there should be a bracket ([) in the output and there should be a [[replaced text]]."""
+        target_text = """This is a \"test\" file. Things there should be a bracket ([) in the output and there should be a replaced text."""
+        self.assertEqual(strip_brackets(text),target_text)
 
 if __name__ == '__main__':
     unittest.main()
