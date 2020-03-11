@@ -1,6 +1,7 @@
 import unittest
 from functions import remove_escapes
 from functions import add_escapes
+from functions import get_matched_entries
 
 class TestStringMethods(unittest.TestCase):
 
@@ -16,6 +17,14 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(add_escapes('escape escapes \\%'),'escape escapes \\\\%')
         self.assertEqual(add_escapes('both \"quot\" \\!'),'both \\"quot\\" \\\\!') 
 
+    def test_get_matched_entries(self):
+        text = """This is [[a test file]]. 
+               Things there should be a bracket ([) in the output and there should be a [[replaced text]]."""
+        no_entries_text = """This is [[a test file. 
+                             Things there should be a bracket ([) in the output and there should be a replaced text."""
+        entries = ['[[a test file]]','[[replaced text]]']
+        self.assertEqual(get_matched_entries(text),entries)
+        self.assertFalse(get_matched_entries(no_entries_text))
 
 if __name__ == '__main__':
     unittest.main()
