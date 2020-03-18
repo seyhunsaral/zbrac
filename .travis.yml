@@ -1,0 +1,22 @@
+ dist: xenial
+ sudo: required
+ branches:
+  only:
+    - master
+    - develop
+    - fix_escape_backslash
+ language: python
+ python:
+  - 3.6
+  - 3.7
+ before_install:
+  - python --version
+  - pip install -U pip
+ install:
+  - sudo apt-get -qq update
+  - pip install -r requirements.txt
+  - sh ./generate_externals.cmd 
+  - pip install ./src/zbrac/.
+
+ script:
+  - python ./continuous_integration/travis/testoftest.py
