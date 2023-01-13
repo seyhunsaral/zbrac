@@ -117,9 +117,11 @@ def xlsx_to_dictionary(filepath):
         worksheet = workbook.active
 
         for row in worksheet.iter_rows():
-            if (len(row) > 1):
-                if pattern.match(row[0].value):
-                    language_dict[row[0].value] = row[1].value
+            print(row[1].value)
+            if row[0].value is not None and row[1].value is not None:
+                if (len(row) > 1):
+                    if pattern.match(row[0].value):
+                        language_dict[row[0].value] = str(row[1].value)
 
         workbook.close()
         print('Loaded language file:' + filepath)
@@ -128,13 +130,14 @@ def xlsx_to_dictionary(filepath):
         print('  ' + '-' * 35)
         for item in language_dict: print(" \n     " + item + "\n    -> " + language_dict[item])
         if (not len(language_dict) > 0):
-            print("No keywords exist in the dictionary file")
-            return
+           print("No keywords exist in the dictionary file")
+           return
         print('  ' + '-' * 35)
         print(str(len(language_dict)) + ' items in total')
         language_dict = add_escapes_dict(language_dict)
         return (language_dict)
-    except:
+    except Exception as ex:
+    #    print(ex)
         print("Error: A problem occured with reading excel file. Does it contain the keys as the first column and the text in second column?")
         return
 
