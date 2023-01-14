@@ -56,11 +56,19 @@ def remove_escapes(stringvar):
 def add_escapes(stringvar):
     return(stringvar.replace('\\','\\\\').replace('\"','\\"'))
 
+def sanitize_r_n(stringvar):
+    return(stringvar.replace('\\\\r\\\\n','\\r\\n'))
+
 def add_escapes_dict(dictionary):
+    ## while things like \cf \par are quoted in the treatment file, for some reason, \r and \n dont. 
+    ## before 1.0.8 version, it was missing files with \r\n
     escaped_dict = dict()
+
     for key in dictionary:
-        escaped_dict[add_escapes(key)] = add_escapes(dictionary[key])
+        escaped_dict[sanitize_r_n(add_escapes(key))] = sanitize_r_n(add_escapes(dictionary[key]))
+    
     return escaped_dict
+
 
 def get_matched_entries(textblock):
     matched_items = re.findall("\[\[.*?\]\]", textblock)
@@ -117,7 +125,7 @@ def xlsx_to_dictionary(filepath):
         worksheet = workbook.active
 
         for row in worksheet.iter_rows():
-            print(row[1].value)
+#            print("hello", row[0].value)
             if row[0].value is not None and row[1].value is not None:
                 if (len(row) > 1):
                     if pattern.match(row[0].value):
@@ -134,6 +142,7 @@ def xlsx_to_dictionary(filepath):
            return
         print('  ' + '-' * 35)
         print(str(len(language_dict)) + ' items in total')
+        
         language_dict = add_escapes_dict(language_dict)
         return (language_dict)
     except Exception as ex:
