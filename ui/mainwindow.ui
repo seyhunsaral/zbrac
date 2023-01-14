@@ -13,7 +13,7 @@
     <x>0</x>
     <y>0</y>
     <width>673</width>
-    <height>479</height>
+    <height>491</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -970,7 +970,7 @@
       </property>
       <widget class="QWidget" name="tab_CL">
        <attribute name="title">
-         <string>Create Language File Template</string>
+        <string>Create Language File Template</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
@@ -1781,31 +1781,6 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="Logo">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>100</horstretch>
-        <verstretch>100</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>125</width>
-        <height>125</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../res/resources.qrc">:/res/logo.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="3" rowspan="5">
      <widget class="QPlainTextEdit" name="text_console">
       <property name="enabled">
@@ -1828,6 +1803,31 @@
       </property>
       <property name="plainText">
        <string>console_text</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="Logo">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>100</horstretch>
+        <verstretch>100</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>125</width>
+        <height>125</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../res/resources.qrc">:/res/logo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
