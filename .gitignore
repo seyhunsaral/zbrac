@@ -2,7 +2,7 @@ venv-setup.txt
 \#*#
 *.*~
 .idea/
-
+venv/
 # cx_freeze output executables
 build/
 

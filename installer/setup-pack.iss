@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "zBrac"
-#define MyAppVersion "1.0.7"
+#define MyAppVersion "1.0.8"
 #define MyAppName "zBrac"
 #define MyAppPublisher "Ali Seyhun Saral, Anna Maria Schroeter"
 #define MyAppURL "https://github.com/seyhunsaral/zBrac"
@@ -23,7 +23,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
 LicenseFile=..\LICENSE
-OutputBaseFilename=zBrac-1-0-7-win32-setup
+OutputBaseFilename=zBrac-1-0-8-win32-setup
 SetupIconFile=..\res\icon.ico
 Compression=lzma
 SolidCompression=yes
@@ -35,8 +35,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\build\exe.win32-3.6\zbrac.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\build\exe.win32-3.6\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\build\exe.win-amd64-3.9\zbrac.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\build\exe.win-amd64-3.9\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
