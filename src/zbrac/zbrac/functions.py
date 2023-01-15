@@ -207,7 +207,21 @@ def implement_language_file(path_treatment_in, path_language_in, path_treatment_
         target_text = strip_brackets(target_text)
         print('stipped brackets non-replaced keys succesfully') 
     
+    ## Encoding temporary
+
+    #target_text = encode_text(target_text, encoding_input, encoding_output)
+
     save_treatment_file(target_text, path_treatment_out,encoding_output)
+
+def encode_text(text, encoding_input, encoding_output):
+    try: 
+        return(text.encode(encoding_input).decode(encoding_output, errors='ignore'))
+    except Exception as ex:
+        print('Error: A problem occured with encoding the text. Please check the encoding settings')
+        print(ex)
+        return
+
+
 
 def strip_brackets(source_text):
     matched_entries = get_matched_entries(source_text)

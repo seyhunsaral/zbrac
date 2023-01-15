@@ -39,7 +39,11 @@ available_encodings_list = [('West Europe(ISO-8859-1)', 'ISO-8859-1'),
 			('Baltic languages(ISO-8859-13)', 'ISO-8859-13'), 
 			('Celtic languages(ISO-8859-14)', 'ISO-8859-14'), 
 			('Western Europe(ISO-8859-15)', 'ISO-8859-15'),
-            ('Unicode(UTF-8)','utf-8')
+            ('Unicode(UTF-8)','utf-8'),
+            ('ASCII','ascii'),
+            ('Windows-1250 Central European','windows-1250'),
+            ('Windows-1251 Cyrillic','windows-1251'),
+            ('Windows-1252 Western European','windows-1252'),
 			]
 
 available_encodings = []
@@ -50,7 +54,7 @@ for tup in available_encodings_list:
 available_encodings_dict = dict(available_encodings_list)
 
 
-titletext = "zBrac 1.0.8"
+titletext = "zBrac 1.0.9"
 
 opening_credits = titletext + """ 
 Copyright © 2018, Ali Seyhun Saral and Anna Schröter
