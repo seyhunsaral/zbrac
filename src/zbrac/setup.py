@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setuptools.setup(
     name='zbrac',
     python_requires='>3.6.0',
-    version='1.0.8',
+    version='1.0.9',
 	packages=['zbrac'],
     url='https://github.com/seyhunsaral/zbrac',
     license='GNU GPL-3',

@@ -13,7 +13,7 @@ exe = Executable(
 
 setup(
     name='zBrac',
-    version='1.0.8',
+    version='1.0.9',
     url='https://github.com/seyhunsaral/zbrac',
     license='GNU GPL-3',
     author='Ali Seyhun Saral, Anna Marie Schroeter',
