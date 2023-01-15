@@ -47,7 +47,9 @@ If you have Python(>=3.6) and pip on your computer you can install zBrac from co
 
 `pip3 install zbrac` ( or `pip install zbrac` if pip is for Python 3)
 
-Please note that you might need to update your pip version before being able to download dependencies properly. You can update your pip verison with the following commend:
+Then simply write `zbrac` on the command line interface.
+
+Please note that you might need to update your pip version before being able to download dependencies properly. You can update your pip verison with the following command:
 
 `pip3 install --upgrade pip`
 
