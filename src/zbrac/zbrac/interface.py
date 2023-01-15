@@ -44,6 +44,12 @@ available_encodings_list = [('West Europe(ISO-8859-1)', 'ISO-8859-1'),
             ('Windows-1250 Central European','windows-1250'),
             ('Windows-1251 Cyrillic','windows-1251'),
             ('Windows-1252 Western European','windows-1252'),
+            ('Windows-1253 Greek','windows-1253'),
+            ('Windows-1254 Turkish','windows-1254'),
+            ('Windows-1255 Hebrew','windows-1255'),
+            ('Windows-1256 Arabic','windows-1256'),
+            ('Windows-1257 Baltic','windows-1257'),
+            ('Windows-1258 Vietnamese','windows-1258'),
 			]
 
 available_encodings = []
